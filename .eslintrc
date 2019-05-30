@@ -6,9 +6,12 @@
   },
   "globals": {
     "window": true,
-    "document": true
+    "document": true,
+    "btoa": true
   },
   "rules": {
+    "react/prop-types": 0,
+    "import/no-unresolved": 1,
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
     "react/jsx-filename-extension": [
