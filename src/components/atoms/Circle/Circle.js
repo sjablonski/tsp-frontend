@@ -25,7 +25,7 @@ export const Circle = styled.div`
     css`
       width: 128px;
       height: 128px;
-      font-size: ${() => (small ? theme.fontSize.s : theme.fontSize.m)};
+      font-size: ${() => (small ? theme.fontSize.xs : theme.fontSize.m)};
     `}
 
   > {

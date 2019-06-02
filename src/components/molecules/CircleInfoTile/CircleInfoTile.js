@@ -1,30 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Button } from 'reactstrap';
+import Button from 'components/atoms/Button/Button';
 import { Circle, CircleSpan } from 'components/atoms/Circle/Circle';
-import Heading from 'components/atoms/Heading/Heading';
+import Paragraph from 'components/atoms/Paragraph/Paragraph';
 
 const Wrapper = styled.div`
-  padding: 0 30px 60px 0;
+  padding: 0 0 48px 0;
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
 `;
 
 const Content = styled.div`
   margin-left: 20px;
 `;
 
-const CircleInfoTile = ({ small, header, description }) => (
+const CircleInfoTile = ({ small, header, label, description }) => (
   <Wrapper>
     <Circle small={small}>
       <CircleSpan header>{header}</CircleSpan>
-      <CircleSpan>{description}</CircleSpan>
+      <CircleSpan>{label}</CircleSpan>
     </Circle>
     <Content>
-      <Heading regular>Twój ostatni opłacony rachunek</Heading>
-      <Button color="primary">primary</Button>
+      <Paragraph small={small} className="mb-4">
+        {description}
+      </Paragraph>
+      <Button emerald>Sprawdź</Button>
     </Content>
   </Wrapper>
 );

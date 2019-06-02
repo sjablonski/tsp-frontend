@@ -1,7 +1,10 @@
 export const theme = {
   blue: '#3498D8',
+  blueDark: '#2387C7',
   emerald: '#1ABC9C',
-  gray: '#D0D0D0',
+  emeraldDark: '#09AB8B',
+  gray: '#8D9397',
+  lightGray: '#dee2e6',
   light: 300,
   regular: 500,
   bold: 700,
